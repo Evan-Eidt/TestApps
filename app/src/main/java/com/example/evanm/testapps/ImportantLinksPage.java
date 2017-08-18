@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageButton;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,7 +14,7 @@ public class ImportantLinksPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_important_links_page);
-        Button menuButton = (Button) findViewById(R.id.menuButton);
+        ImageButton menuButton = (ImageButton) findViewById(R.id.menuButton);
 
         menuButton.setOnClickListener(new View.OnClickListener() {
 
@@ -40,7 +41,7 @@ public class ImportantLinksPage extends AppCompatActivity {
     }
 
     public void goToPS (View view) {
-        goToUrl ( "https://ps1.chelsea.k12.mi.us/public/");
+        goToUrl ("https://ps1.chelsea.k12.mi.us/public/");
     }
 
     private void goToUrl (String url) {

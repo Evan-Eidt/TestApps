@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,7 +21,7 @@ public class CalendarPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_page);
 
-        Button menuButton = (Button) findViewById(R.id.menuButton);
+        ImageButton menuButton = (ImageButton) findViewById(R.id.menuButton);
 
             menuButton.setOnClickListener(new View.OnClickListener() {
 
